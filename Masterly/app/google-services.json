@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "468439263169",
+    "firebase_url": "https://masterly-69743.firebaseio.com",
+    "project_id": "masterly-69743",
+    "storage_bucket": "masterly-69743.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:468439263169:android:3525ff88a2f096e5",
+        "android_client_info": {
+          "package_name": "com.example.masterly"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "468439263169-vhr2h7ifh9d5uiqj3r2r3gi3a52t7kq3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBmvR_9HHQp_fTUsoKFg7wUgNulRjZIJBo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.masterly.CalendarActivity">
+
+    <com.github.sundeepk.compactcalendarview.CompactCalendarView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/compactcalendar_view"
+        android:layout_width="fill_parent"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:layout_height="250dp"
+        app:compactCalendarTargetHeight="250dp"
+        app:compactCalendarTextSize="12sp"
+        app:compactCalendarBackgroundColor="#81a6d8"
+        app:compactCalendarTextColor="#fff"
+        app:compactCalendarCurrentSelectedDayBackgroundColor="#4f7fc1"
+        app:compactCalendarCurrentDayBackgroundColor="#7994cc"
+        app:compactCalendarMultiEventIndicatorColor="#fff"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/currentEventsText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" "
+        android:textSize="25dp"
+        android:layout_marginTop="29dp"
+        android:layout_below="@+id/compactcalendar_view"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/addEventButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Event"
+        android:layout_marginBottom="16dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/eventNameText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create an Event:"
+        android:textSize="16dp"
+        android:layout_marginBottom="16dp"
+        android:layout_above="@+id/addEventEditText"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="23dp" />
+
+    <EditText
+        android:id="@+id/addEventEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Enter Here"
+        android:ems="10"
+        android:textSize="15dp"
+        android:textCursorDrawable="@null"
+        android:layout_marginBottom="10dp"
+        android:layout_above="@+id/addEventButton"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="#4f7fc1"/>
+
+
+
+
+
+</RelativeLayout>

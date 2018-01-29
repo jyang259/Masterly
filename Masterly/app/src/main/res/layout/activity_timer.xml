@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.masterly.TimerActivity"
+    android:background="@drawable/plainwood">
+
+    <TextView
+        android:id="@+id/countdownTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="00:00:00"
+        android:textColor="@android:color/black"
+        android:textSize="60sp"
+        android:layout_marginTop="117dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/startPauseButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/countdownTextView"
+        android:layout_centerHorizontal="true"
+        android:text="start" />
+
+    <Button
+        android:id="@+id/resetButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="reset"
+        android:visibility="invisible"
+        tools:visibility="visible"
+        android:layout_below="@+id/startPauseButton"
+        android:layout_alignStart="@+id/startPauseButton" />
+
+    <TextView
+        android:id="@+id/setTimeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Duration:"
+        android:textSize="20dp"
+        android:layout_alignBaseline="@+id/hoursEditText"
+        android:layout_alignBottom="@+id/hoursEditText"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="18dp" />
+
+    <EditText
+        android:id="@+id/hoursEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="HH"
+        android:textColor="#fff"
+        android:inputType="number"
+        android:maxLength="2"
+        android:ems="2"
+        android:ellipsize="start"
+        android:gravity="center_horizontal"
+        android:textCursorDrawable="@null"
+        android:layout_alignBaseline="@+id/minutesEditText"
+        android:layout_alignBottom="@+id/minutesEditText"
+        android:layout_toStartOf="@+id/minutesEditText"
+        android:layout_marginEnd="10dp"
+        android:backgroundTint="#4f7fc1"/>
+
+    <EditText
+        android:id="@+id/minutesEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="MM"
+        android:textColor="#fff"
+        android:inputType="number"
+        android:maxLength="2"
+        android:ems="2"
+        android:ellipsize="start"
+        android:gravity="center_horizontal"
+        android:textCursorDrawable="@null"
+        android:layout_marginBottom="19dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="#4f7fc1"/>
+
+    <EditText
+        android:id="@+id/secondsEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="SS"
+        android:textColor="#fff"
+        android:inputType="number"
+        android:maxLength="2"
+        android:ems="2"
+        android:ellipsize="start"
+        android:gravity="center_horizontal"
+        android:textCursorDrawable="@null"
+        android:layout_alignBaseline="@+id/minutesEditText"
+        android:layout_alignBottom="@+id/minutesEditText"
+        android:layout_toEndOf="@+id/minutesEditText"
+        android:layout_marginStart="14dp"
+        android:backgroundTint="#4f7fc1"/>
+
+    <Button
+        android:id="@+id/setTimeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Set"
+        android:minHeight="10dp"
+        android:minWidth="22dp"
+        android:layout_alignTop="@+id/secondsEditText"
+        android:layout_toEndOf="@+id/secondsEditText"
+        android:layout_marginStart="40dp" />
+
+</RelativeLayout>
